@@ -1,5 +1,5 @@
 import express from 'express'
-import { isAdmin, requireSignIn } from '../middlewares/authMiddleWare.js'
+import { isAdmin, requireSignIn } from '../middlewares/authMiddleware.js'
 import { createProductController ,deleteProductController,getProductController, getSingleProductController, productCategoryController, productCountController, productFiltersController, productListController, productPhotoController, updateProductController} from '../controllers/productController.js';
 import formidable from 'express-formidable';
 
