@@ -4,8 +4,8 @@ import Layout from "../../components/layout/Layout";
 const Policy = () => {
   return (
     <Layout title={"Privacy Policy"}>
-      <div className="row policy">
-        <div className="col-md-4 ">
+      <div className="d-flex flex-wrap" style={{justifyContent:"center"}}>
+        <div className="contact-img col-md-3">
           <img
             src="/images/privacy3.jfif"
             alt="contactus"

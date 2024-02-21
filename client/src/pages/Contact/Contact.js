@@ -6,11 +6,11 @@ import { Link } from "react-router-dom";
 const Contact = () => {
   return (
     <Layout title={"Contact us"}>
-      <div className="row contactus py-30 ">
-        <div className="col-md-4 ">
+      <div className="d-flex flex-wrap" style={{justifyContent:"space-around"}}>
+        <div className="contact-img col-md-3">
           <img
             src="/images/contact.jfif"
-            alt="contactus"
+            alt="contact"
             style={{ width: "100%" }}
           />
         </div>

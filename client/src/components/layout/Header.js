@@ -26,7 +26,7 @@ const Header = () => {
   <div className="container-fluid">
   <Link to='/' class="navbar-brand" >
     <div className='logo'>
-    <img src="/images/logo1.png" alt="" style={{width:"34px",height:"30px",marginRight:"5px"}} />
+    <img src="/images/nav-logo.png" alt="" style={{width:"34px",height:"30px",marginRight:"5px"}} />
        <div style={{color:"white",fontWeight:"400",fontSize:"20px",paddingTop:"5px"}}>COTTON AND WOOL</div>
     </div>
     

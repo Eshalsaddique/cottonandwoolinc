@@ -46,12 +46,12 @@ const About = () => {
       <div className="gpt3-header">
        
 
-        <div className="gpt3-header-content">
+        <div className="gpt3-header-content" style={{alignItems:"center"}}>
           <h1
             className="gradient-text text-center p-2 py-10"
-            style={{ fontSize:"45px", fontWeight: "700",textAlign:"center" }}
+            style={{ fontSize:"45px", fontWeight: "800" }}
           >
-            ABOUT US{" "}
+            ABOUT US
           </h1>
           <p className="text-justify mt-2 py-10 px-10">
             Our mission is to revolutionize everyday comfort with our line of
