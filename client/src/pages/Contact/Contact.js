@@ -14,13 +14,14 @@ const Contact = () => {
             style={{ width: "100%" }}
           />
         </div>
-        <div className="col-md-6">
+        <div className="col-md-6" style={{margin:'2%', paddingTop:'1%'}}>
           <h1
             className="gradient-text p-2 text-center"
             style={{ fontSize: "50px", fontWeight: "800" }}
           >
             CONTACT US
           </h1>
+          <div  className="contact-p d-flex flex-column">
           <p className="text-justify mt-2">
             Interested in wholesale orders? Contact us 
             to inquire about bulk pricing and
@@ -71,6 +72,7 @@ const Contact = () => {
               : @CCOTTONWWOOL
             </Link>
           </p>
+          </div>
         </div>
       </div>
     </Layout>

@@ -31,6 +31,7 @@ const Products = () => {
   return (
     <Layout>
       <div className="list-product">
+      <h6 className="text-center">{products?.length} Products found </h6>
         <h1>All Products List</h1>
         <div className="format">
           <p>Product</p>
