@@ -437,8 +437,8 @@ button:hover{
 
 .gpt3-header{
   display: flex;
-  padding: 5%;
-  margin: 0% 3%;
+  padding: 3%;
+  margin: 0% 2%;
   flex-wrap: wrap;
  
 
@@ -450,9 +450,17 @@ button:hover{
   flex: 1;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
   margin-right: 5rem;
+}
+.gpt3-header-content-main{
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
 }
 .gpt3-header-content h1{
   font-family: "poppins",sans-serif;
@@ -469,6 +477,20 @@ button:hover{
   line-height: 20px;
   color:#676666;
   margin-top: 1rem;
+}
+.gpt3-header-content button{
+  width: 100px;
+  height: 38px;
+   font-family:"poppins",sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+   background: #919492;
+   border-radius:25px;
+   color: #fff;
+   cursor: pointer;
+   outline:none;
+   padding: 0 2px;
+   border: none;
 }
 .gpt3-header-content-input{
   width: 100%;
@@ -490,6 +512,7 @@ button:hover{
   outline:none;
   padding: 0 2px;
   border: none;
+ 
 
   
 }
@@ -503,8 +526,8 @@ button:hover{
 }
 
 .gpt3-header-img img {
-  width:90%;
-  height: 80%;
+  width:80%;
+  height: 50%;
 
 }
 @media screen and (max-width:1050px){
@@ -519,19 +542,24 @@ button:hover{
   .gpt3-header{
       flex-direction: column;
   }
+  .gpt3-header h1{
+    font-size: 32px;
+    line-height: 40px;
+    font-family: 'Playfair Display', serif;
+  }
   .gpt3-header-img{
       height: 350px;
   }
   .gpt3-header-img img {
     width: 100%;
-    height: 400px;
+    height: 250px;
   }
 }
 
 @media screen and (max-width:700px){
   .gpt3-header h1{
-    font-size: 34px;
-    line-height: 55px;
+    font-size: 28px;
+    line-height: 32px;
   }
   .gpt3-header p{
       font-size:14px ;
@@ -546,22 +574,22 @@ button:hover{
 @media screen and (max-width:600px){
   .gpt3-header-img img {
     width: 100%;
-    height: 300px;
+    height: 240px;
   }
 }
-@media screen and (max-width:490px){
+@media screen and (max-width:500px){
   .gpt3-header{
       margin-left: 0px;
       padding: 40px;
   }
   .gpt3-header h1{
-    font-size: 26px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 30px;
     font-family: 'Playfair Display', serif;
   }
   .gpt3-header-img img {
     width: 100%;
-    height: 250px;
+    height: 200px;
   }
   .gpt3-header-content-input input,
   .gpt3-header-content-input button{
@@ -572,8 +600,35 @@ button:hover{
        height: 300px;
   } */
 }
-
-
+/* about banner */
+.about-banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  background-color: gray;
+  padding: 3%;
+}
+.about-banner-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 5%;
+  h1{
+    font-size: 35px;
+    font-weight: 700;
+    color: #fff;
+    font-family: "poppins",sans-serif;
+  }
+  p{
+    color: aliceblue;
+    font-size: 16px;
+    margin-top: 15px;
+  }
+}
 
 .banner{
   display: flex;

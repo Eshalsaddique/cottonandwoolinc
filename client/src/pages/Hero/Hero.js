@@ -4,10 +4,11 @@ const Hero = () => {
   return (
     <>
       <div className="gpt3-header">
-      <div className="gpt3-header-img">
+      {/* <div className="gpt3-header-img">
           <img src="/images/hero.jfif" alt="img" />
-        </div>
+        </div> */}
         <div className="gpt3-header-content">
+          <div className="gpt3-header-content-main">
           <h1 className="gradient-text">
          Empowering Retailers with Premium Wholesale Solution !          </h1>
           <p>
@@ -16,8 +17,10 @@ const Hero = () => {
             scrubs, and comfy socks, we've got everything you need to elevate
             your home or business. 
           </p>
-          <div className="gpt3-header-content-input">
+          <button type="button "> <a  href="mailto:ccottonwwool@gmail.com" style={{fontSize:"12px",textDecoration:"none",color:"white",fontWeight:"500"}}>Get In Touch</a></button>
+          {/* <div className="gpt3-header-content-input">
             <button type="button "> <a  href="mailto:ccottonwwool@gmail.com" style={{fontSize:"12px",textDecoration:"none",color:"white",fontWeight:"500"}}>Get In Touch</a></button>
+          </div> */}
           </div>
         </div>
        
