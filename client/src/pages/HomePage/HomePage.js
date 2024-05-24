@@ -109,7 +109,7 @@ const HomePage = () => {
     <>
       <Layout>
        <Banner/>
-        <div className="filter mt-3">
+        <div className="filter mt-3" >
           <h5 className="text-center">Filter By Category</h5>
           <div className="d-flex flex-wrap justify-content-center">
             {categories?.map((c) => {
@@ -136,9 +136,9 @@ const HomePage = () => {
           </div>
         </div>
         <hr />
-        <div className="row mt-3">
+        <div className="mt-3">
           <div>
-            <h1 className="gradient-text text-center" style={{fontSize:"36px",fontWeight:"bold"}}>ALL PRODUCTS</h1>
+            <h1 className="gradient-text text-center" style={{fontSize:"36px",fontWeight:"bold",fontFamily:"Playfair Display"}}>ALL PRODUCTS</h1>
 
             <div className="card">
               {products?.map((p) => {

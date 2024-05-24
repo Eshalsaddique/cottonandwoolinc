@@ -17,7 +17,7 @@ const Hero = () => {
             scrubs, and comfy socks, we've got everything you need to elevate
             your home or business. 
           </p>
-          <button type="button "> <a  href="mailto:ccottonwwool@gmail.com" style={{fontSize:"12px",textDecoration:"none",color:"white",fontWeight:"500"}}>Get In Touch</a></button>
+          <button type="button " > <a  href="mailto:ccottonwwool@gmail.com" style={{fontSize:"12px",textDecoration:"none",color:"white",fontWeight:"500"}}>Get In Touch</a></button>
           {/* <div className="gpt3-header-content-input">
             <button type="button "> <a  href="mailto:ccottonwwool@gmail.com" style={{fontSize:"12px",textDecoration:"none",color:"white",fontWeight:"500"}}>Get In Touch</a></button>
           </div> */}

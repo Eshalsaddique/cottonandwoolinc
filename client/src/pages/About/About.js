@@ -7,17 +7,19 @@ const About = () => {
     <Layout title={"About us - Ecommer app"}>
       <Hero />
 
+
+
       <div className="gpt3-header">
         <div className="gpt3-header-img">
-          <img src="/images/about.jfif" alt="img" />
+          <img src="/images/group.jpg" alt="img" />
         </div>
 
         <div className="gpt3-header-content" style={{ alignItems: "center" }}>
           <h1
             className="gradient-text text-center p-2 py-10"
-            style={{ fontSize: "45px", fontWeight: "800", paddingTop: "4%" }}
+            style={{ fontSize: "45px", fontWeight: "800",marginTop:"20px" }}
           >
-            ABOUT US
+       ABOUT US
           </h1>
           <p className="text-justify mt-2 py-10 px-10">
             Our mission is to revolutionize everyday comfort with our line of
@@ -43,15 +45,15 @@ const About = () => {
           <p>
             Here comfort meets style in every stitch. Dive into our world of
             cotton and wool wonders.Crafted with care and designed for your
-            utmost satisfaction, our collection is your gateway to comfort
-            . Join us on a journey where functionality meets fashion,
-            and discover the perfect blend of practicality and luxury. Step into
-            comfort with COTTON AND WOOL today.
+            utmost satisfaction, our collection is your gateway to comfort .
+            Join us on a journey where functionality meets fashion, and discover
+            the perfect blend of practicality and luxury. Step into comfort with
+            COTTON AND WOOL today.
           </p>
         </div>
       </div>
 
-      <div className="gpt3-header">
+      {/* <div className="gpt3-header">
         <div className="gpt3-header-content" style={{ alignItems: "center" }}>
           <h1
             className="gradient-text text-center p-2 py-10"
@@ -76,7 +78,53 @@ const About = () => {
         <div className="gpt3-header-img">
           <img src="/images/about.jfif" alt="img" />
         </div>
+      </div> */}
+
+
+
+
+      <div className="gpt3-header">
+        <div className="gpt3-header-content" style={{ alignItems: "center" }}>
+          <h1
+            className="gradient-text text-center"
+            style={{ fontSize: "35px", fontWeight: "700", paddingTop: "2%" }}
+          >
+       OUR MISSION 
+          </h1>
+
+          <p
+            className="text-justify mt-2  px-20"
+            style={{ fontSize: "14px" }}
+          >
+            At the heart of
+            our brand is a desire to enhance the lives of our customers by
+            delivering exceptional products that not only meet but exceed their
+            expectations. We believe in the power of comfort to inspire
+            confidence and elevate daily experiences, and it is this belief that
+            motivates us to innovate and excel in everything we do. Join us on
+            our journey to redefine comfort and luxury, one step at a time.
+          </p>
+        </div>
+        <div className="gpt3-header-img" style={{position:"relative"}}>
+          <img src="/images/pattren1.jfif" alt="img" style={{maxWidth:"300px",height:"400px",minWidth:"200px"}}/>
+          {/* <div className="info-about1">
+            <span></span>
+            <p>Quality and satisfaction</p>
+          </div>
+          <div className="info-about2">
+            <span></span>
+            <p>Years of Experience</p>
+          </div>
+          <div className="info-about3">
+            <span></span>
+            <p>Happy Clients</p>
+          </div> */}
+        </div>
       </div>
+
+
+
+      
     </Layout>
   );
 };
