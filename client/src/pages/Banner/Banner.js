@@ -1,27 +1,39 @@
 import React from "react";
+import OwlCarousel from "react-owl-carousel";
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
 
 import { FaHandshake, FaUser } from "react-icons/fa";
 import { RiVerifiedBadgeLine } from "react-icons/ri";
 import { MdOutlineVerifiedUser } from "react-icons/md";
 
-
-
+const options = {
+  margin: 20,
+  responsiveClass: true,
+  nav: false,
+  autoplay: false,
+  navText: ["Prev", "Next"],
+  smartSpeed: 1000,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    400: {
+      items: 3,
+    },
+    600: {
+      items: 3,
+    },
+    700: {
+      items: 5,
+    },
+    1000: {
+      items: 7,
+    },
+  },
+};
 
 const Banner = () => {
-
-  let box = document.querySelector('.banner-cat-card');
-
-  const btnpressprev =()=>{
-  let width =box.clientWidth;
-  box.scrollLeft -= width;
-  };
-  
-  const btnpressnext =()=>{
-    let width =box.clientWidth;
-    box.scrollLeft += width;
-  };
-
-  
   return (
     <>
       {/* <div className="banner-main">
@@ -72,60 +84,66 @@ const Banner = () => {
       <div className="banner-main">
         <div className="banner-box">
           <FaHandshake
-            style={{ color: "grey", fontSize: "50px", marginBottom: "10px" }}
+            style={{ color: "grey", fontSize: "35px", marginBottom: "10px" }}
           />
           <p>Years of Experience</p>
         </div>
         <div className="banner-box">
           <RiVerifiedBadgeLine
-            style={{ color: "grey", fontSize: "50px", marginBottom: "10px" }}
+            style={{ color: "grey", fontSize: "35px", marginBottom: "10px" }}
           />
           <p>Quality & Satisfaction</p>
         </div>
         <div className="banner-box">
           <FaUser
-            style={{ color: "grey", fontSize: "50px", marginBottom: "10px" }}
+            style={{ color: "grey", fontSize: "35px", marginBottom: "10px" }}
           />
           <p>Happy customers</p>
         </div>
         <div className="banner-box">
           <MdOutlineVerifiedUser
-            style={{ color: "grey", fontSize: "50px", marginBottom: "10px" }}
+            style={{ color: "grey", fontSize: "35px", marginBottom: "10px" }}
           />
           <p>5 Year Warranty</p>
         </div>
       </div>
 
-      <div className="banner-cat">
-        <h1 className="gradient-text text-center p-10">Our Categories</h1>
-        <div className="banner-cat-box">
-        <button className="prebtn" onClick={btnpressprev}><p>&lt;</p></button>
-        <button className="nextbtn" onClick={btnpressnext}><p>&gt;</p></button>
+      
 
-
-        <div className="banner-cat-card">
-          <div className="cat-img">
-        <img src="/images/cat1.jfif" alt="img" />
-        <p>Towels</p>
+      <div className="carosel">
+        <h1 className="gradient-text text-center">Our Categories</h1>
+        <OwlCarousel className="slider-items owl-carousel" {...options}>
+          <div className="item">
+            <img src="/images/cat1.jfif" alt="img" />
           </div>
-          <div className="cat-img">
-        <img src="/images/cat7.jfif" alt="img" />
-        <p>Medical Scrubs</p>
+          <div className="item">
+            <img src="/images/cat6.jfif" alt="img" />
           </div>
-          <div className="cat-img">
-        <img src="/images/cat8.jpg" alt="img" />
-        <p>Uniform</p>
+          <div className="item">
+            <img src="/images/cat7.jfif" alt="img" />
           </div>
-          <div className="cat-img">
-        <img src="/images/cat5.jfif" alt="img" />
-        <p>Patient Gowns</p>
+          <div className="item">
+            <img src="/images/cat8.jpg" alt="img" />
           </div>
-          <div className="cat-img">
-        <img src="/images/cat6.jfif" alt="img" />
-        <p>Socks</p>
+          <div className="item">
+            <img src="/images/cat2.png" alt="img" />
           </div>
-        </div>
-        </div>
+          <div className="item">
+            <img src="/images/cat1.jfif" alt="img" />
+          </div>
+          <div className="item">
+            <img src="/images/cat6.jfif" alt="img" />
+          </div>
+          <div className="item">
+            <img src="/images/cat7.jfif" alt="img" />
+          </div>
+          <div className="item">
+            <img src="/images/cat8.jpg" alt="img" />
+          </div>
+          <div className="item">
+            <img src="/images/cat2.png" alt="img" />
+          </div>
+        </OwlCarousel>
       </div>
     </>
   );
