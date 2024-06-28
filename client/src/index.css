@@ -35,7 +35,15 @@ body{
  
 }
 
-
+.cart-icon{
+  color: white;
+  font-size: 18px;
+  display: inline-block;
+  margin-left: 10px;
+}
+.cart-icon:hover{
+  color: aqua;
+}
 .nav-link{
   font-weight: 30px !important;
    color: white;
@@ -65,7 +73,12 @@ body{
 }
 .navbar-toggler{
   color: white;
+ position: relative;
+ right: -20%;
+  
 }
+
+
 .navbar-toggler-icon{
   color: white;
 }
@@ -73,7 +86,30 @@ body{
 .collapse{
   color: white;
 }
-
+@media(max-width:990px){
+  .navbar-toggler{
+    position: relative;
+    right:-25%;
+  }
+}
+@media(max-width:800px){
+  .navbar-toggler{
+    position: relative;
+    right: -22%;
+  }
+}
+@media(max-width:600px){
+  .navbar-toggler{
+    position: relative;
+    right: -10%;
+  }
+}
+@media(max-width:500px){
+  .navbar-toggler{
+    position: relative;
+  right: 0;
+  }
+}
 
 
 
@@ -284,9 +320,7 @@ button:hover{
     padding: 0px 5px;
     margin-left: 10%;
     margin-bottom: 5%;
-   
-    position: relative;
-
+   position: relative;
     border: 0;
     outline: none;
     cursor: pointer;
@@ -301,6 +335,14 @@ button:hover{
   .details:hover{
     background:black;
   }
+  .add-to-cart{
+   background: #585858;
+   
+  }
+  .add-to-cart:hover{
+   color: black;
+  }
+  
 }
 .content:hover{
   box-shadow: 0 3px 6px rgba(0,0,0,0.16),

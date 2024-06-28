@@ -2,13 +2,17 @@ import React, { useState, useEffect } from "react";
 import Layout from "../../components/layout/Layout";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import { Checkbox, Radio } from "antd";
+import { Checkbox } from "antd";
 import { AiOutlineReload } from "react-icons/ai";
-import Hero from "../Hero/Hero";
+
 import Banner from "../Banner/Banner";
+// import { FaCartArrowDown } from "react-icons/fa";
+// import { useCart } from "../../context/cart";
+// import toast from "react-hot-toast";
 
 const HomePage = () => {
   const navigate = useNavigate();
+  // const [cart,setCart] = useCart();
   const [products, setProducts] = useState([]);
   const [categories, setCategories] = useState([]);
   const [checked, setChecked] = useState([]);
@@ -92,7 +96,8 @@ const HomePage = () => {
   }, [checked.length]);
   useEffect(() => {
     if (checked.length) filterProduct();
-  }, [checked]);
+  }, 
+[checked]);
 
   //get filter product
   const filterProduct = async () => {
@@ -151,10 +156,14 @@ const HomePage = () => {
                     <h3>{p.name}</h3>
                     <p>{p.description.substring(0, 25)}...</p>
                     <h6>
-                      {p.price.toLocaleString("en-US", {
+                      {/* {p.price.toLocaleString("en-US", {
                         style: "currency",
                         currency: "USD",
-                      })}
+                      })} */}
+                       {p.price ? p.price.toLocaleString("en-US", {
+                         style: "currency",
+                        currency: "USD",
+                          }) : 'Price not available'}
                     </h6>
                     <button
                       onClick={() => navigate(`/products/${p.slug}`)}
@@ -162,6 +171,14 @@ const HomePage = () => {
                     >
                       Details
                     </button>
+                    {/* <button
+                    className="add-to-cart"
+                    onClick={()=>{
+                      setCart([...cart,p])
+                      toast.success("Item added to cart")
+                      }}>
+                      <FaCartArrowDown/>
+                    </button> */}
                   </div>
                 );
               })}
