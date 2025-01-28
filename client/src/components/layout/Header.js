@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 import { useAuth } from "../../context/auth";
 import toast from "react-hot-toast";
 import useCategory from "../../hooks/useCategory";
-// import { FaCartArrowDown } from "react-icons/fa";
-// import { useCart } from "../../context/cart";
-// import {Badge} from 'antd';
+import { FaCartArrowDown } from "react-icons/fa";
+import { useCart } from "../../context/cart";
+import {Badge} from 'antd';
 
 const Header = () => {
   const [auth, setAuth] = useAuth();
-  // const [cart] = useCart();
+  const [cart] = useCart();
   const categories = useCategory();
   const handleLogout = () => {
     setAuth({
@@ -36,7 +36,7 @@ const Header = () => {
               <div
                 style={{
                   color: "white",
-                  fontWeight: "400",
+                  fontWeight: "200",
                   fontSize: "20px",
                   paddingTop: "5px",
                 }}
@@ -61,7 +61,15 @@ const Header = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          
+
+
+          <div className="d-inline-block ml-2 align-middle d-lg-none">
+      <Badge count={cart?.length} showZero style={{backgroundColor:"white",color:"black",fontWeight:"bold",marginTop:"5px"}}>
+        <Link to="/cart" class="cart-icon" href="#">
+          <FaCartArrowDown />
+        </Link>
+      </Badge>
+    </div>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
@@ -146,18 +154,18 @@ const Header = () => {
                   </li>
                 </>
               )}
+              <li className="nav-item">
+          <Badge count={cart?.length} showZero style={{backgroundColor:"white",color:"black",fontWeight:"bold",marginTop:"5px"}}>
+            <Link to="/cart" class="nav-link" href="#">
+              <FaCartArrowDown />
              
+            </Link>
+          </Badge>
+        </li>
             </ul>
              
           </div>
-         {/* example */}
-         {/* <div>
-          <Badge count={cart?.length} showZero>
-               <Link to="/cart" class="cart-icon" href="#">
-                  <FaCartArrowDown />
-                </Link>
-                </Badge>
-                </div> */}
+         
         </div>
          
       </nav>

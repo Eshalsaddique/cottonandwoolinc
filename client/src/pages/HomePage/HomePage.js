@@ -6,13 +6,13 @@ import { Checkbox } from "antd";
 import { AiOutlineReload } from "react-icons/ai";
 
 import Banner from "../Banner/Banner";
-// import { FaCartArrowDown } from "react-icons/fa";
-// import { useCart } from "../../context/cart";
-// import toast from "react-hot-toast";
+import { FaCartArrowDown } from "react-icons/fa";
+import { useCart } from "../../context/cart";
+import toast from "react-hot-toast";
 
 const HomePage = () => {
   const navigate = useNavigate();
-  // const [cart,setCart] = useCart();
+  const [cart,setCart] = useCart();
   const [products, setProducts] = useState([]);
   const [categories, setCategories] = useState([]);
   const [checked, setChecked] = useState([]);
@@ -133,19 +133,19 @@ const HomePage = () => {
             style={{ marginTop: 20 }}
           >
             <button
-              className="btn " style={{background:"black",color: "#fff"}}
+              className="btn " style={{color:"#222f3e", backgroundColor:"transparent",fontSize:"12px",fontWeight:"400",border:"1px solid #222f3e",borderRadius:"25px",width:"100px"}}
               onClick={() => window.location.reload()}
             >
               Reset Filter
             </button>
           </div>
         </div>
-        <hr />
-        <div className="mt-3">
+        
+        <div className="mt-3" style={{paddingTop:'5%'}}>
           <div>
-            <h1 className="gradient-text text-center" style={{fontSize:"36px",fontWeight:"bold",fontFamily:"Playfair Display"}}>ALL PRODUCTS</h1>
+            <h1 className="gradient-text text-center" style={{fontSize:"40px",fontWeight:"500",fontFamily:"Poppins"}}>ALL PRODUCTS</h1>
 
-            <div className="card">
+            <div className="card" >
               {products?.map((p) => {
                 return (
                   <div className="content">
@@ -171,14 +171,14 @@ const HomePage = () => {
                     >
                       Details
                     </button>
-                    {/* <button
+                    <button
                     className="add-to-cart"
                     onClick={()=>{
                       setCart([...cart,p])
                       toast.success("Item added to cart")
                       }}>
                       <FaCartArrowDown/>
-                    </button> */}
+                    </button>
                   </div>
                 );
               })}

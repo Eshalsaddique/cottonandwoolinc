@@ -10,7 +10,7 @@ const Layout = ({children}) => {
     <div>
      
      <Header/>
-     <main style={{minHeight:'80vh'}}>
+     <main style={{minHeight:'100vh'}}>
      <Toaster/>
       {children }
       </main>

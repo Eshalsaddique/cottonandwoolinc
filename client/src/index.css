@@ -3,8 +3,8 @@
 font-family: 'Playfair Display', serif;
 font-family: 'Poppins', sans-serif; */
 :root{
-   /* --gradient-text:linear-gradient(0deg, rgb(9, 10, 10) 0%, rgb(165, 164, 163) 100%);  */
-  --gradient-text:linear-gradient(0deg, rgb(59, 252, 255) 0%, rgb(52, 54, 54) 100%); 
+   --gradient-text:linear-gradient(0deg, rgb(79, 79, 79) 0%, rgb(143, 142, 141) 100%); 
+  /* --gradient-text:linear-gradient(0deg, rgb(59, 252, 255) 0%, rgb(52, 54, 54) 100%);  */
 }
 *{
   margin: 0;
@@ -17,17 +17,21 @@ body{
 }
 
 .navbar{
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   font-family:'Poppins', sans-serif;
-  font-size: 17px;
-  line-height: 26px;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 100;
   text-transform: uppercase;
   box-shadow: 0 8px 6px -6px gray;
   --webkit-box-shadow: 0 8px 6px -6px gray;
   border-bottom: 0.3px solid gray !important;
   padding-right:3% ;
   padding-left: 2%;
-  /* background-color: #4b4b4b; */
-  /* background: whitesmoke; */
+ 
   background: grey;
   color: #3c3e3c;
   
@@ -45,11 +49,10 @@ body{
   color: aqua;
 }
 .nav-link{
-  font-weight: 30px !important;
+  font-weight: 100;
    color: white;
  
-   /* font-family: 'poppins'san-serif;
-  font-weight: 300; */
+  
 }
 
 .navbar-nav a:hover{
@@ -57,9 +60,9 @@ body{
 }
 
 .navbar-brand{
-  font-weight: 700;
+  font-weight: 500;
   text-decoration: none;
-  font-family:  'Playfair Display', serif;
+  font-family: "poppins",sans-serif;
   letter-spacing: 1px;
   color: #3c3e3c;
 
@@ -112,9 +115,36 @@ body{
 }
 
 
-
-
-
+/* home page carousel .........................*/
+.carousel-item{
+  height: 70vh;
+}
+.carousel-caption h5{
+  color: #222f3e;
+  font-size: 26px;
+  font-family: "poppins",sans-serif;
+  font-weight: 400;
+}
+.carousel-caption p{
+  font-size: 12px;
+  font-family: "poppins",sans-serif;
+  font-weight: 400; 
+  color: #2c2828;
+}
+.carousel-caption button{
+  border:1px solid #222f3e;
+  border-radius: 25px;
+  padding: 2px;
+ background: transparent;
+  width: 100px;
+ 
+}
+.carousel-caption button a{
+ font-size: 12px;
+ text-decoration: none;
+  font-weight: 400;
+  color:#222f3e;
+}
 /* pagenotfound ....................,......*/
 .pnf {
   display: flex;
@@ -271,33 +301,33 @@ button:hover{
   margin: 15px;
   box-sizing: border-box;
   float: left;
-  /* text-align: center; */
+  text-align: center;
   /* border-radius: 20px; */
   cursor: pointer;
   padding-top: 10px;
-  box-shadow: 0 2px 6px rgba(100, 100, 100, 0.25),
-  0 3px 8px rgba(0,0,0,0.22);
+  /* box-shadow: 0 2px 6px rgba(100, 100, 100, 0.25),
+  0 3px 8px rgba(0,0,0,0.22); */
   transition: .4s;
   background: #fbfbfb;
   h3{
-    text-align:start;
+    
     font-size: 16px;
-    padding-left: 11%;
+    
     text-transform: uppercase;
     margin: 0;
     padding-top:8px;
     font-weight: 500;
   }
   img{
-    width: 220px;
-    height: 200px;
+    width: 100%;
+    height: 250px;
     text-align: center;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     display: block;
     /* border-radius: 15px 15px 0 0; */
   }
   p{
-    text-align:start;
+    display: none;
     color: #899093;
     padding-top: 0 ;
     padding-left:11%;
@@ -305,32 +335,31 @@ button:hover{
   }
   h6{
     font-size: 14px;
-    text-align:start;
+   padding-top: 2%;
    color: #222f3e;
-   padding-left: 11%;
-   font-weight: 700;
+ 
+   font-weight: 300;
    
     margin: 0;
   }
   button{
     text-align: center;
-    font-size: 13px;
+    font-size: 10px;
+    font-weight: 100;
     color: #fff;
-    width: 80px;
+    width: 60px;
     padding: 0px 5px;
-    margin-left: 10%;
-    margin-bottom: 5%;
-   position: relative;
     border: 0;
     outline: none;
     cursor: pointer;
-    margin-top: 5px;
-    border-radius: 20px;
+   margin: 2% 2%;
+   border-radius: 20px;
 
 
   }
   .details{
     background:#585858;
+    
   }
   .details:hover{
     background:black;
@@ -353,15 +382,16 @@ button:hover{
   .content{
     width: 45%;
   img{
-    width: 80%;
+    width: 100%;
   }
   }
 }
 @media(max-width:750px){
   .content{
-    width: 75%;
+    width: 40%;
     img{
-      width: 85%;
+      width: 100%;
+      height: 200px;
     }
   }
 }
@@ -500,8 +530,8 @@ button:hover{
   flex-direction: column;
 }
 .gpt3-header-content h1{
-  font-family: "playfair Display",serif;
-  font-weight: 700;
+  font-family: "poppins", sans-serif;
+  font-weight: 500;
   font-size:40px;
   line-height: 52px;
   padding-top: 5%;
@@ -511,7 +541,7 @@ button:hover{
   font-family: "poppins", sans-serif;
   font-size: 14px;
   
-  font-weight: 400;
+  font-weight: 300;
   line-height: 20px;
   color:#676666;
   margin-top: 1rem;
@@ -585,7 +615,7 @@ button:hover{
   .gpt3-header h1{
     font-size: 32px;
     line-height: 40px;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
   }
   .gpt3-header-img{
       height: 350px;
@@ -663,9 +693,9 @@ button:hover{
   padding: 5%;
   h1{
     font-size: 35px;
-    font-weight: 600;
+    font-weight: 400;
     color: #d5d5d5;
-    font-family: "playfair Display",serif;
+    font-family: "poppins",sans-serif;
   }
   p{
     color: aliceblue;
@@ -705,8 +735,8 @@ button:hover{
   h1{
     font-size:45px;
     color: #222f3e;
-    font-weight: 700;
-    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
     line-height: 45px;
     /* margin-bottom: 3rem; */
   
@@ -714,7 +744,7 @@ button:hover{
   }
   p{
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 300;
     color: #919492;
     
   }
@@ -760,22 +790,35 @@ a{
     color: #222f3e;
     font-size: 12px;
     line-height: 20px;
-    font-family: 'Playfair Display', serif;
+    font-family: "poppins",sans-serif;
   }
 }
 .carosel{
   h1{
-    
+    margin-top: 3%;
       font-size: 38px;
-      font-family: 'Playfair Display', serif;
+      font-family: "poppins",sans-serif ;
       padding: 10px;
+      font-weight: 500;
+      text-transform: uppercase;
     
   }
 }
+.slider-items{
+
+margin-right: 5%;
+}
+.item{
+  width: 120px;
+  margin: 10% 0;
+ 
+  
+}
 .item img{
-  width: 100px;
-  height: 100px;
-  border-radius: 25px;
+  width: 100%;
+  height: 60px;
+  border-radius:50%;
+  margin: 5%;
 }
 .banner-cat{
   height: 250px;
@@ -786,7 +829,8 @@ margin-bottom: 2%;
 
   h1{
     font-size: 38px;
-    font-family: 'Playfair Display', serif;
+    font-family: "poppins",sans-serif;
+    text-transform: uppercase;
   }
 }
 .banner-cat-card{
@@ -801,9 +845,9 @@ margin-bottom: 2%;
 }
 .cat-img{
 
-  max-width: 120px;
-  min-width: 120px;
-  height: 120px;
+  max-width: 60px;
+  min-width: 60px;
+  height: 80px;
  align-items: center;
  justify-content: center;
  display: flex;
@@ -814,7 +858,7 @@ margin-bottom: 2%;
     font-size: 14px;
     font-family: 'Poppins', sans-serif;
     padding-top: 5px;
-    font-weight: 500;
+    font-weight: 300;
   }
 
 }

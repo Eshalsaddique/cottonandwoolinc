@@ -108,7 +108,7 @@ ul{
     text-transform: uppercase;
     margin-bottom: 30px;
     font-family: 'poppins',sans-serif;
-    font-weight: 500;
+    font-weight: 300;
     position: relative;
 }
 .footer-col h4::before{
@@ -125,11 +125,11 @@ ul{
     margin-bottom: 5px;
 }
 .footer-col ul li a{
-    font-size: 16px;
+    font-size: 14px;
     text-transform: uppercase;
     color: #bbbbbb;
     text-decoration: none;
-    font-weight: 400;
+    font-weight: 100;
     display: block;
     position: relative;
     left: -30px;

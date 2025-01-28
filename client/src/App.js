@@ -20,7 +20,7 @@ import UpdateProduct from "./pages/admin/UpdateProduct";
 import ProductDetail from "./pages/ProductDetail/ProductDetail";
 import Categories from "./pages/user/Categories";
 import CategoryProduct from "./pages/user/CategoryProduct";
-// import CartPage from './pages/user/CartPage';
+import CartPage from './pages/user/CartPage';
 
 function App() {
   return (
@@ -29,7 +29,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/products/:slug" element={<ProductDetail />} />
         <Route path="/categories" element={<Categories />} />
-        {/* <Route path='/cart' element={<CartPage/>}/> */}
+        <Route path='/cart' element={<CartPage/>}/>
         <Route path="/category/:slug" element={<CategoryProduct />} />
         <Route path="/dashboard" element={<PrivateRoute />}>
           <Route path="user" element={<Dashboard />} />
